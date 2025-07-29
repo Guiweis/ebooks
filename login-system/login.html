@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW EBOOKS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background: #000;
+            font-size: 20px;
+            color: white;
+            margin: auto;
+        }
+
+        @font-face {
+            font-family: "minhaFonte";
+            src: url('AGENCYR.TTF') format('truetype');
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input {
+            color: white;
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        .box {
+            color: white;
+            font-family: "minhaFonte";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(90deg, rgba(0, 100, 55, 1) 0%, rgba(10, 158, 92, 1) 50%, rgba(0, 100, 55, 1) 100%);
+            padding: 15px;
+            border-radius: 15px;
+            width: 25%;
+        }
+
+        fieldset {
+            color: white;
+            font-family: "minhaFonte";
+            border: 3px solid #fff
+        }
+
+        legend {
+            font-family: "minhaFonte";
+            border: 1px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        .inputBox {
+            color: white;
+            font-family: "minhaFonte";
+            position: relative;
+        }
+
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            outline: none;
+            font-family: "minhaFonte";
+            font-size: 20px;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .labelInput {
+            color: white;
+            font-family: "minhaFonte";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            font-family: "minhaFonte";
+            top: -20px;
+            font-size: 20px;
+            color: rgb(34, 255, 0);
+        }
+
+        .entrar {
+            font-family: "minhaFonte";
+            font-size: 25px;
+            background: rgb(255, 255, 255);
+            color: #006437;
+            width: 150px;
+            height: 35px;
+            padding: 0;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 0 auto;
+            display: block;
+            text-decoration: none;
+        }
+
+        .entrar:hover {
+            font-family: "minhaFonte";
+            font-size: 25px;
+            background: rgb(2, 38, 22);
+            color: rgb(34, 255, 0);
+            width: 150px;
+            height: 35px;
+            padding: 1px;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 0 auto;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+<br><br>
+<br><br>
+    <img src="imagem/gwebook_logomarca_site.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+
+    <div class="box">
+        <fieldset>
+            <legend>Login</legend>
+            <div class="inputBox">
+            <input type="text" id="loginUser" class="inputUser"  required>
+            <label for="loginUser" class="labelInput">Usuário</label>
+            </div>
+            <br>
+            <div class="inputBox">
+            <input type="password" id="loginPass" class="inputUser" required>
+            <label for="loginPass" class="labelInput">Senha</label>
+            </div>
+            <br>
+            <button onclick="login()" class="entrar">Entrar</button>
+            <br>
+            <div align="center">Ainda não tem uma conta? <a href="index.html" class="text1branco_link">Cadastre-se</a></p>
+            <p id="loginMessage"></p>
+        </fieldset> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
