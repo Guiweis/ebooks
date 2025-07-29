@@ -5,7 +5,7 @@
 
 .text1 {
     font-family: "minhaFonte";
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-weight: normal;
     font-style: normal;
@@ -13,7 +13,7 @@
 
 .text1branco {
     font-family: "minhaFonte";
-	font-size: 18px;
+	font-size: 20px;
 	color: #FFF;
 	font-weight: normal;
 	font-style: normal;
@@ -21,7 +21,7 @@
 }
 .text1branco_link {
     font-family: "minhaFonte";
-	font-size: 18px;
+	font-size: 20px;
 	color: #FFF;
 	font-weight: normal;
 	font-style: normal;
@@ -30,7 +30,7 @@
 
 .text1nome {
     font-family: "minhaFonte";
-    font-size: 20px;
+    font-size: 22px;
     color: #000;
     font-weight: bold;
     font-style: normal;
@@ -38,7 +38,7 @@
 
 .text1nome_verde {
     font-family: "minhaFonte";
-    font-size: 20px;
+    font-size: 22px;
     color: #006437;
     font-weight: bold;
     font-style: normal;
@@ -47,7 +47,7 @@
 
 .text1nome_preto {
     font-family: "minhaFonte";
-    font-size: 20px;
+    font-size: 22px;
     color: #000000;
     font-weight: bold;
     font-style: normal;
@@ -56,7 +56,7 @@
 
 .text1nome_verde_titulo {
     font-family: "minhaFonte";
-    font-size: 24px;
+    font-size: 26px;
     color: #006437;
     font-weight: bold;
     font-style: normal;
@@ -65,7 +65,7 @@
 
 .text18 {
     font-family: "minhaFonte";
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-weight: bold;
     font-style: normal;
@@ -74,7 +74,7 @@
 
 .text14 {
     font-family: "minhaFonte";
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     font-weight: bold;
     font-style: normal;
@@ -82,7 +82,7 @@
 
 .text2 {
     font-family: "minhaFonte";
-    font-size: 14px;
+    font-size: 16px;
     color: #FFF;
     font-weight: bold;
     font-style: normal;
@@ -90,7 +90,7 @@
 
 .text1negrito {
     font-family: "minhaFonte";
-    font-size: 24px;
+    font-size: 26px;
     color: #FFF;
     font-weight: bold;
     font-style: normal;
@@ -107,7 +107,7 @@
 
 .text1_negrito_verde {
     font-family: "minhaFonte";
-    font-size: 24px;
+    font-size: 26px;
     color: #006437;
     font-weight: bold;
     font-style: normal;
@@ -134,7 +134,7 @@
 #texto {
     font-family: "minhaFonte";
     position: absolute;
-    font-size: 32px;
+    font-size: 34px;
     left: 250px;
     top: 135px;
 }
@@ -157,7 +157,7 @@ input {
 
 button {
     font-family: "minhaFonte";
-    font-size: 25px;
+    font-size: 27px;
     background: rgb(255, 255, 255);
     color: #006437;
     width: 150px;
@@ -171,7 +171,7 @@ button {
 
 button:hover{
     font-family: "minhaFonte";
-    font-size: 25px;
+    font-size: 27px;
     background: rgb(2, 38, 22);
     color: rgb(34, 255, 0);
     width: 150px;
@@ -183,7 +183,7 @@ button:hover{
 }
 recuperarsenha {
     font-family: "minhaFonte";
-    font-size: 25px;
+    font-size: 27px;
     background: rgb(255, 255, 255);
     color: #006437;
     width: 150px;
@@ -197,7 +197,7 @@ recuperarsenha {
 
 recuperarsenha:hover{
     font-family: "minhaFonte";
-    font-size: 25px;
+    font-size: 27px;
     background: rgb(2, 38, 22);
     color: rgb(34, 255, 0);
     width: 150px;
@@ -217,7 +217,7 @@ recuperarsenha:hover{
 }
 .loading label {
     font-family: "minhaFonte";
-    font-size: 24px;
+    font-size: 26px;
 }
 .error {
     font-family: "minhaFonte";
