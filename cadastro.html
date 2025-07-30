@@ -149,22 +149,28 @@
 
     <div class="box">
         <fieldset>
-            <legend>Login</legend>
+            <legend>Cadastro</legend>
             <div class="inputBox">
-                <input type="text" id="emailUser" class="inputUser" required>
-                <label for="emailUser" class="labelInput">Email</label>
+                <input type="text" id="username" class="inputUser" required>
+                <label for="username" class="labelInput">Nome</label>
             </div>
             <br>
             <div class="inputBox">
-                <input type="password" id="loginPass" class="inputUser" required>
-                <label for="loginPass" class="labelInput">Senha</label>
+                <input type="text" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
             </div>
             <br>
-            <button onclick="login()" class="entrar">Entrar</button>
+            <div class="inputBox">
+                <input type="password" id="password" class="inputUser" required>
+                <label for="password" class="labelInput">Senha</label>
+            </div>
             <br>
-            <div align="center">Ainda não tem uma conta? <a href="cadastro.html"
-                    class="text1branco_link">Cadastre-se</a></p>
-                <p id="loginMessage"></p>
+            <button onclick="register()" class="entrar">Cadastrar</button>
+            <div align="center">
+                <p>Já tem uma conta?<a class="text1branco_link" href="login.html">Faça login</a></p>
+                <p id="message"></p>
+            </div>
+
         </fieldset>
     </div>
     <script src="script.js"></script>
