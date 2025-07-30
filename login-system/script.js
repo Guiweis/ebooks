@@ -4,8 +4,9 @@ function register() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
 
-  if (username && password) {
+  if (username && email && password) {
     localStorage.setItem("user", username);
+    localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     document.getElementById("message").innerText =
       "Cadastro realizado com sucesso!";
@@ -16,13 +17,13 @@ function register() {
 
 // Função para login
 function login() {
-  let loginUser = document.getElementById("loginUser").value;
+  let emailUser = document.getElementById("emailUser").value;
   let loginPass = document.getElementById("loginPass").value;
 
   let storedUser = localStorage.getItem("email");
   let storedPass = localStorage.getItem("password");
 
-  if (loginUser === storedUser && loginPass === storedPass) {
+  if (emailUser === storedUser && loginPass === storedPass) {
     localStorage.setItem("loggedIn", "true");
     window.location.href = "dashboard.html";
   } else {
