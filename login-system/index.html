@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,31 +139,40 @@
         }
     </style>
 </head>
+
 <body>
     <br><br>
     <br><br>
     <br><br>
-    <img src="gwebook_logomarca_site.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;" href="index.html">
+    <img src="gwebook_logomarca_site.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;"
+        href="index.html">
 
     <div class="box">
         <fieldset>
             <legend>Cadastro</legend>
             <div class="inputBox">
-            <input type="text" id="username" class="inputUser" required>
-            <label for="username" class="labelInput">Usuário</label>
+                <input type="text" id="username" class="inputUser" required>
+                <label for="username" class="labelInput">Usuário</label>
             </div>
             <br>
             <div class="inputBox">
-            <input type="password" id="password" class="inputUser" required>
-            <label for="password" class="labelInput">Senha</label>
+                <input type="text" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" class="inputUser" required>
+                <label for="password" class="labelInput">Senha</label>
             </div>
             <br>
             <button onclick="register()" class="entrar">Cadastrar</button>
-            <div align="center"><p>Já tem uma conta?<a class="text1branco_link" href="/login-system/login.html">Faça login</a></p>
-        <p id="message"></p></div>
-        
-        </fieldset> 
+            <div align="center">
+                <p>Já tem uma conta?<a class="text1branco_link" href="/login-system/login.html">Faça login</a></p>
+                <p id="message"></p>
+            </div>
+
+        </fieldset>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
