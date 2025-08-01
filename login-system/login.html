@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW EBOOKS</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
     <link href="style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         body {
@@ -144,41 +138,31 @@
         }
     </style>
 </head>
-
 <body>
-    <br><br>
-    <br><br>
-    <br><br>
-    <a href="index.html"><img src="gwebook_logomarca_site.png" alt="Logo"
-            style="display: block; margin: 0 auto; width: 200px; height: auto;" href="index.html"></a>
+<br><br>
+<br><br>
+<br><br>
+    <img src="gwebook_logomarca_site.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;" href="index.html">
 
     <div class="box">
         <fieldset>
-            <legend>Cadastro</legend>
+            <legend>Login</legend>
             <div class="inputBox">
-                <input type="text" id="username" class="inputUser" required>
-                <label for="username" class="labelInput">Nome</label>
+            <input type="text" id="loginUser" class="inputUser"  required>
+            <label for="loginUser" class="labelInput">Usuário</label>
             </div>
             <br>
             <div class="inputBox">
-                <input type="text" id="email" class="inputUser" required>
-                <label for="email" class="labelInput">Email</label>
+            <input type="password" id="loginPass" class="inputUser" required>
+            <label for="loginPass" class="labelInput">Senha</label>
             </div>
             <br>
-            <div class="inputBox">
-                <input type="password" id="password" class="inputUser" required>
-                <label for="password" class="labelInput">Senha</label>
-            </div>
+            <button onclick="login()" class="entrar">Entrar</button>
             <br>
-            <button onclick="register()" class="entrar">Cadastrar</button>
-            <div align="center">
-                <p>Já tem uma conta?<a class="text1branco_link" href="login.html">Faça login</a></p>
-                <p id="message"></p>
-            </div>
-
-        </fieldset>
+            <div align="center">Ainda não tem uma conta? <a href="/login-system/index.html" class="text1branco_link">Cadastre-se</a></p>
+            <p id="loginMessage"></p>
+        </fieldset> 
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>

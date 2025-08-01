@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW EBOOKS</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <style type="text/css">
+        <style type="text/css">
         body {
             background: #000;
             font-size: 20px;
@@ -57,7 +52,7 @@
             background: linear-gradient(90deg, rgba(0, 100, 55, 1) 0%, rgba(10, 158, 92, 1) 50%, rgba(0, 100, 55, 1) 100%);
             padding: 15px;
             border-radius: 15px;
-            width: 25%;
+            width: 40%;
         }
 
         fieldset {
@@ -144,41 +139,11 @@
         }
     </style>
 </head>
-
 <body>
-    <br><br>
-    <br><br>
-    <br><br>
-    <a href="index.html"><img src="gwebook_logomarca_site.png" alt="Logo"
-            style="display: block; margin: 0 auto; width: 200px; height: auto;" href="index.html"></a>
-
-    <div class="box">
-        <fieldset>
-            <legend>Cadastro</legend>
-            <div class="inputBox">
-                <input type="text" id="username" class="inputUser" required>
-                <label for="username" class="labelInput">Nome</label>
-            </div>
-            <br>
-            <div class="inputBox">
-                <input type="text" id="email" class="inputUser" required>
-                <label for="email" class="labelInput">Email</label>
-            </div>
-            <br>
-            <div class="inputBox">
-                <input type="password" id="password" class="inputUser" required>
-                <label for="password" class="labelInput">Senha</label>
-            </div>
-            <br>
-            <button onclick="register()" class="entrar">Cadastrar</button>
-            <div align="center">
-                <p>Já tem uma conta?<a class="text1branco_link" href="login.html">Faça login</a></p>
-                <p id="message"></p>
-            </div>
-
-        </fieldset>
+    <div class="box" align="center">
+        <h2>Bem-vindo, <span id="user"></span>!</h2>
+        <button onclick="logout()" class="entrar">Sair</button>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>

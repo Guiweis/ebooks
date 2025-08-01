@@ -1,11 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = strip_tags(trim($_POST["nome"]));
+    $nomeCompleto = strip_tags(trim($_POST["nomeCompleto"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $mensagem = trim($_POST["mensagem"]);
 
     // Verifica se os campos estão preenchidos
-    if (empty($nome) || empty($mensagem) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($nomeCompleto) || empty($mensagem) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Por favor, preencha todos os campos corretamente.";
         exit;
     }
@@ -15,12 +15,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $assunto = "GW EBOOKS - Contato";
 
     // Cabeçalhos do e-mail
-    $headers = "From: $nome <$email>\r\n";
+    $headers = "From: $nomeCompleto <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
     // Corpo da mensagem
-    $conteudo = "Nome: $nome\n";
+    $conteudo = "nomeCompleto: $nomeCompleto\n";
     $conteudo .= "Email: $email\n\n";
     $conteudo .= "Mensagem:\n$mensagem\n";
 
