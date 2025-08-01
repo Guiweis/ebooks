@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nomeCompleto = strip_tags(trim($_POST["nomeCompleto"]));
+    $nomeCompleto = trim($_POST["nomeCompleto"]);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $mensagem = trim($_POST["mensagem"]);
 
